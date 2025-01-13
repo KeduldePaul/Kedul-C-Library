@@ -112,8 +112,8 @@ void Vec2::rotate(float angle) {
     float c = std::cos(angle);
     float s = std::sin(angle);
 
-    float xT = c * x + s * y;
-    float yT = -s * x + c * y;
+    float xT = c * x + -s * y;
+    float yT = s * x +  c * y;
 
     x = xT;
     y = yT;
